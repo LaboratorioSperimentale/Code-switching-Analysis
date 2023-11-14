@@ -32,15 +32,19 @@ data["help_language"] = data["help_language"].astype(cat_type_help)
 print(data.dtypes)
 
 # data = pd.get_dummies(data, columns=['proficiency_level', 'help_language'], drop_first=True)
-data = pd.get_dummies(data, columns=['proficiency_level'], drop_first=True)
+# data = pd.get_dummies(data, columns=['proficiency_level'], drop_first=True)
 
 print(data.dtypes)
 
 from statsmodels.miscmodels.ordinal_model import OrderedModel
 
 mod_prob = OrderedModel(data['help_language'],
-                        data[["proficiency_level_A2 Elementary English", "proficiency_level_B1Intermediate", "proficiency_level_B2 Upper-Intemediate", "proficiency_level_C1 Advanced English", "proficiency_level_C2 Proficiency English"]],
+                        data["proficiency_level"],
                         distr='logit')
+
+
+
+# data[["proficiency_level_A2 Elementary English", "proficiency_level_B1Intermediate", "proficiency_level_B2 Upper-Intemediate", "proficiency_level_C1 Advanced English", "proficiency_level_C2 Proficiency English"]],
 
 res_prob = mod_prob.fit(method='bfgs')
 res_prob.summary()
