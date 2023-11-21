@@ -1,0 +1,192 @@
+#### LANG_HELP ~ PROFICIENCY ####
+
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:              LANG_HELP   No. Observations:                  271
+Model:                          Logit   Df Residuals:                      266
+Method:                           MLE   Df Model:                            4
+Date:                Fri, 17 Nov 2023   Pseudo R-squ.:                 0.01404
+Time:                        11:51:30   Log-Likelihood:                -185.16
+converged:                       True   LL-Null:                       -187.80
+Covariance Type:            nonrobust   LLR p-value:                    0.2604
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.9163      0.837      1.095      0.273      -0.724       2.556
+PROFICIENCY[T.B1]    -0.7444      0.903     -0.825      0.410      -2.514       1.025
+PROFICIENCY[T.B2]    -0.8109      0.854     -0.949      0.343      -2.486       0.864
+PROFICIENCY[T.C1]    -1.3031      0.864     -1.508      0.132      -2.997       0.391
+PROFICIENCY[T.C2]    -1.2040      1.133     -1.063      0.288      -3.424       1.016
+=====================================================================================
+
+
+
+
+#### LANG_UNDERSTAND ~ PROFICIENCY ####
+
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:        LANG_UNDERSTAND   No. Observations:                  271
+Model:                          Logit   Df Residuals:                      266
+Method:                           MLE   Df Model:                            4
+Date:                Fri, 17 Nov 2023   Pseudo R-squ.:                0.002104
+Time:                        11:51:30   Log-Likelihood:                -155.53
+converged:                       True   LL-Null:                       -155.86
+Covariance Type:            nonrobust   LLR p-value:                    0.9567
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept            -0.9163      0.837     -1.095      0.273      -2.556       0.724
+PROFICIENCY[T.B1]     0.1361      0.912      0.149      0.881      -1.652       1.925
+PROFICIENCY[T.B2]    -0.1924      0.860     -0.224      0.823      -1.879       1.494
+PROFICIENCY[T.C1]    -0.1379      0.871     -0.158      0.874      -1.845       1.569
+PROFICIENCY[T.C2] -9.117e-16      1.183  -7.71e-16      1.000      -2.319       2.319
+=====================================================================================
+
+
+
+
+#### LANG_LEARN ~ PROFICIENCY ####
+
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:             LANG_LEARN   No. Observations:                  271
+Model:                          Logit   Df Residuals:                      266
+Method:                           MLE   Df Model:                            4
+Date:                Fri, 17 Nov 2023   Pseudo R-squ.:                 0.02146
+Time:                        11:51:30   Log-Likelihood:                -179.45
+converged:                       True   LL-Null:                       -183.39
+Covariance Type:            nonrobust   LLR p-value:                   0.09638
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.9163      0.837      1.095      0.273      -0.724       2.556
+PROFICIENCY[T.B1]    -1.2040      0.904     -1.332      0.183      -2.975       0.567
+PROFICIENCY[T.B2]    -0.3773      0.856     -0.441      0.659      -2.055       1.300
+PROFICIENCY[T.C1]    -0.4827      0.864     -0.558      0.577      -2.177       1.211
+PROFICIENCY[T.C2]    -1.8326      1.183     -1.549      0.121      -4.152       0.486
+=====================================================================================
+
+
+
+
+#### LANG_ATM ~ PROFICIENCY ####
+
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:               LANG_ATM   No. Observations:                  271
+Model:                          Logit   Df Residuals:                      266
+Method:                           MLE   Df Model:                            4
+Date:                Fri, 17 Nov 2023   Pseudo R-squ.:                 0.01195
+Time:                        11:51:30   Log-Likelihood:                -156.98
+converged:                       True   LL-Null:                       -158.88
+Covariance Type:            nonrobust   LLR p-value:                    0.4339
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept            -0.9163      0.837     -1.095      0.273      -2.556       0.724
+PROFICIENCY[T.B1]     0.3902      0.907      0.430      0.667      -1.387       2.168
+PROFICIENCY[T.B2]    -0.2747      0.861     -0.319      0.750      -1.963       1.414
+PROFICIENCY[T.C1]     0.0850      0.868      0.098      0.922      -1.616       1.786
+PROFICIENCY[T.C2]    -0.8755      1.366     -0.641      0.522      -3.553       1.802
+=====================================================================================
+
+
+
+
+#### LING_HELP ~ PROFICIENCY ####
+
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:              LING_HELP   No. Observations:                  271
+Model:                          Logit   Df Residuals:                      266
+Method:                           MLE   Df Model:                            4
+Date:                Fri, 17 Nov 2023   Pseudo R-squ.:                0.004193
+Time:                        11:51:30   Log-Likelihood:                -183.32
+converged:                       True   LL-Null:                       -184.09
+Covariance Type:            nonrobust   LLR p-value:                    0.8189
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept            -0.2877      0.764     -0.377      0.706      -1.785       1.209
+PROFICIENCY[T.B1]     0.2305      0.835      0.276      0.783      -1.407       1.868
+PROFICIENCY[T.B2] -3.211e-16      0.784   -4.1e-16      1.000      -1.536       1.536
+PROFICIENCY[T.C1]    -0.2412      0.795     -0.303      0.762      -1.799       1.316
+PROFICIENCY[T.C2] -1.931e-17      1.080  -1.79e-17      1.000      -2.117       2.117
+=====================================================================================
+
+
+
+
+#### LING_UNDERSTAND ~ PROFICIENCY ####
+
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:        LING_UNDERSTAND   No. Observations:                  271
+Model:                          Logit   Df Residuals:                      266
+Method:                           MLE   Df Model:                            4
+Date:                Fri, 17 Nov 2023   Pseudo R-squ.:                0.008621
+Time:                        11:51:30   Log-Likelihood:                -161.25
+converged:                       True   LL-Null:                       -162.65
+Covariance Type:            nonrobust   LLR p-value:                    0.5910
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept            -0.9163      0.837     -1.095      0.273      -2.556       0.724
+PROFICIENCY[T.B1]     0.3902      0.907      0.430      0.667      -1.387       2.168
+PROFICIENCY[T.B2]     0.0726      0.858      0.085      0.933      -1.609       1.754
+PROFICIENCY[T.C1]    -0.1974      0.872     -0.226      0.821      -1.906       1.512
+PROFICIENCY[T.C2]    -0.8755      1.366     -0.641      0.522      -3.553       1.802
+=====================================================================================
+
+
+
+
+#### LING_LEARN ~ PROFICIENCY ####
+
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:             LING_LEARN   No. Observations:                  271
+Model:                          Logit   Df Residuals:                      266
+Method:                           MLE   Df Model:                            4
+Date:                Fri, 17 Nov 2023   Pseudo R-squ.:                 0.02779
+Time:                        11:51:30   Log-Likelihood:                -180.42
+converged:                       True   LL-Null:                       -185.58
+Covariance Type:            nonrobust   LLR p-value:                   0.03544
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.2877      0.764      0.377      0.706      -1.209       1.785
+PROFICIENCY[T.B1]    -0.9383      0.843     -1.113      0.266      -2.590       0.713
+PROFICIENCY[T.B2]  1.233e-15      0.784   1.57e-15      1.000      -1.536       1.536
+PROFICIENCY[T.C1]     0.3388      0.796      0.426      0.670      -1.220       1.898
+PROFICIENCY[T.C2]    -0.5754      1.080     -0.533      0.594      -2.692       1.542
+=====================================================================================
+
+
+
+
+#### LING_ATM ~ PROFICIENCY ####
+
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:               LING_ATM   No. Observations:                  271
+Model:                          Logit   Df Residuals:                      266
+Method:                           MLE   Df Model:                            4
+Date:                Fri, 17 Nov 2023   Pseudo R-squ.:                0.002851
+Time:                        11:51:30   Log-Likelihood:                -146.53
+converged:                       True   LL-Null:                       -146.95
+Covariance Type:            nonrobust   LLR p-value:                    0.9333
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept            -1.7918      1.080     -1.659      0.097      -3.909       0.325
+PROFICIENCY[T.B1]     0.7309      1.147      0.637      0.524      -1.518       2.980
+PROFICIENCY[T.B2]     0.5147      1.100      0.468      0.640      -1.642       2.671
+PROFICIENCY[T.C1]     0.6781      1.108      0.612      0.540      -1.493       2.849
+PROFICIENCY[T.C2]     0.8755      1.366      0.641      0.522      -1.802       3.553
+=====================================================================================
+
+
+
+

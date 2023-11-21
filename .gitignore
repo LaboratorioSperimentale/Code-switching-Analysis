@@ -1,3 +1,9 @@
+.vscode/*
 .venv/*
 
-data/*
+data/estrazione.tsv
+data/source_data.tsv
+
+plots/*
+
+*/__pycache__/*

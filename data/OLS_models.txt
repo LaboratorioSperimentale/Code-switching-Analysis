@@ -1,0 +1,272 @@
+#### LANG_HELP ~ PROFICIENCY ####
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              LANG_HELP   R-squared:                       0.019
+Model:                            OLS   Adj. R-squared:                  0.004
+Method:                 Least Squares   F-statistic:                     1.304
+Date:                Fri, 17 Nov 2023   Prob (F-statistic):              0.269
+Time:                        11:51:59   Log-Likelihood:                -194.01
+No. Observations:                 271   AIC:                             398.0
+Df Residuals:                     266   BIC:                             416.0
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.7143      0.189      3.782      0.000       0.342       1.086
+PROFICIENCY[T.B1]    -0.1714      0.207     -0.829      0.408      -0.579       0.236
+PROFICIENCY[T.B2]    -0.1880      0.194     -0.970      0.333      -0.570       0.194
+PROFICIENCY[T.C1]    -0.3098      0.196     -1.579      0.115      -0.696       0.076
+PROFICIENCY[T.C2]    -0.2857      0.267     -1.070      0.286      -0.812       0.240
+==============================================================================
+Omnibus:                     1384.736   Durbin-Watson:                   1.899
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               41.826
+Skew:                           0.038   Prob(JB):                     8.27e-10
+Kurtosis:                       1.077   Cond. No.                         16.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+#### LANG_UNDERSTAND ~ PROFICIENCY ####
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        LANG_UNDERSTAND   R-squared:                       0.002
+Model:                            OLS   Adj. R-squared:                 -0.013
+Method:                 Least Squares   F-statistic:                    0.1658
+Date:                Fri, 17 Nov 2023   Prob (F-statistic):              0.956
+Time:                        11:51:59   Log-Likelihood:                -161.54
+No. Observations:                 271   AIC:                             333.1
+Df Residuals:                     266   BIC:                             351.1
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.2857      0.168      1.705      0.089      -0.044       0.616
+PROFICIENCY[T.B1]     0.0286      0.184      0.156      0.876      -0.333       0.390
+PROFICIENCY[T.B2]    -0.0376      0.172     -0.219      0.827      -0.376       0.301
+PROFICIENCY[T.C1]    -0.0273      0.174     -0.157      0.876      -0.370       0.315
+PROFICIENCY[T.C2] -1.665e-16      0.237  -7.03e-16      1.000      -0.467       0.467
+==============================================================================
+Omnibus:                       60.343   Durbin-Watson:                   1.964
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               60.218
+Skew:                           1.079   Prob(JB):                     8.39e-14
+Kurtosis:                       2.177   Cond. No.                         16.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+#### LANG_LEARN ~ PROFICIENCY ####
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             LANG_LEARN   R-squared:                       0.029
+Model:                            OLS   Adj. R-squared:                  0.015
+Method:                 Least Squares   F-statistic:                     2.010
+Date:                Fri, 17 Nov 2023   Prob (F-statistic):             0.0933
+Time:                        11:51:59   Log-Likelihood:                -188.15
+No. Observations:                 271   AIC:                             386.3
+Df Residuals:                     266   BIC:                             404.3
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.7143      0.185      3.864      0.000       0.350       1.078
+PROFICIENCY[T.B1]    -0.2857      0.202     -1.411      0.159      -0.684       0.113
+PROFICIENCY[T.B2]    -0.0827      0.190     -0.436      0.663      -0.456       0.291
+PROFICIENCY[T.C1]    -0.1075      0.192     -0.560      0.576      -0.486       0.270
+PROFICIENCY[T.C2]    -0.4286      0.261     -1.640      0.102      -0.943       0.086
+==============================================================================
+Omnibus:                     1684.678   Durbin-Watson:                   1.784
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               40.563
+Skew:                          -0.372   Prob(JB):                     1.56e-09
+Kurtosis:                       1.256   Cond. No.                         16.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+#### LANG_ATM ~ PROFICIENCY ####
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               LANG_ATM   R-squared:                       0.014
+Model:                            OLS   Adj. R-squared:                 -0.001
+Method:                 Least Squares   F-statistic:                    0.9438
+Date:                Fri, 17 Nov 2023   Prob (F-statistic):              0.439
+Time:                        11:51:59   Log-Likelihood:                -163.52
+No. Observations:                 271   AIC:                             337.0
+Df Residuals:                     266   BIC:                             355.1
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.2857      0.169      1.693      0.092      -0.047       0.618
+PROFICIENCY[T.B1]     0.0857      0.185      0.464      0.643      -0.278       0.450
+PROFICIENCY[T.B2]    -0.0526      0.173     -0.304      0.761      -0.394       0.288
+PROFICIENCY[T.C1]     0.0177      0.175      0.101      0.920      -0.327       0.363
+PROFICIENCY[T.C2]    -0.1429      0.239     -0.599      0.550      -0.613       0.327
+==============================================================================
+Omnibus:                       70.379   Durbin-Watson:                   1.820
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               54.808
+Skew:                           0.998   Prob(JB):                     1.25e-12
+Kurtosis:                       2.067   Cond. No.                         16.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+#### LING_HELP ~ PROFICIENCY ####
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              LING_HELP   R-squared:                       0.006
+Model:                            OLS   Adj. R-squared:                 -0.009
+Method:                 Least Squares   F-statistic:                    0.3807
+Date:                Fri, 17 Nov 2023   Prob (F-statistic):              0.822
+Time:                        11:51:59   Log-Likelihood:                -192.13
+No. Observations:                 271   AIC:                             394.3
+Df Residuals:                     266   BIC:                             412.3
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.4286      0.188      2.285      0.023       0.059       0.798
+PROFICIENCY[T.B1]     0.0571      0.205      0.278      0.781      -0.347       0.462
+PROFICIENCY[T.B2] -3.342e-16      0.192  -1.74e-15      1.000      -0.379       0.379
+PROFICIENCY[T.C1]    -0.0578      0.195     -0.297      0.767      -0.441       0.326
+PROFICIENCY[T.C2]  7.295e-17      0.265   2.75e-16      1.000      -0.522       0.522
+==============================================================================
+Omnibus:                     1463.282   Durbin-Watson:                   1.820
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               44.313
+Skew:                           0.334   Prob(JB):                     2.39e-10
+Kurtosis:                       1.135   Cond. No.                         16.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+#### LING_UNDERSTAND ~ PROFICIENCY ####
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        LING_UNDERSTAND   R-squared:                       0.010
+Model:                            OLS   Adj. R-squared:                 -0.005
+Method:                 Least Squares   F-statistic:                    0.6784
+Date:                Fri, 17 Nov 2023   Prob (F-statistic):              0.607
+Time:                        11:51:59   Log-Likelihood:                -168.41
+No. Observations:                 271   AIC:                             346.8
+Df Residuals:                     266   BIC:                             364.8
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.2857      0.172      1.663      0.098      -0.053       0.624
+PROFICIENCY[T.B1]     0.0857      0.188      0.455      0.649      -0.285       0.456
+PROFICIENCY[T.B2]     0.0150      0.176      0.085      0.932      -0.332       0.362
+PROFICIENCY[T.C1]    -0.0385      0.178     -0.216      0.829      -0.390       0.313
+PROFICIENCY[T.C2]    -0.1429      0.243     -0.588      0.557      -0.621       0.336
+==============================================================================
+Omnibus:                      111.492   Durbin-Watson:                   1.894
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               52.119
+Skew:                           0.922   Prob(JB):                     4.81e-12
+Kurtosis:                       1.899   Cond. No.                         16.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+#### LING_LEARN ~ PROFICIENCY ####
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             LING_LEARN   R-squared:                       0.038
+Model:                            OLS   Adj. R-squared:                  0.024
+Method:                 Least Squares   F-statistic:                     2.627
+Date:                Fri, 17 Nov 2023   Prob (F-statistic):             0.0350
+Time:                        11:51:59   Log-Likelihood:                -189.16
+No. Observations:                 271   AIC:                             388.3
+Df Residuals:                     266   BIC:                             406.3
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.5714      0.186      3.080      0.002       0.206       0.937
+PROFICIENCY[T.B1]    -0.2286      0.203     -1.125      0.262      -0.629       0.172
+PROFICIENCY[T.B2] -1.643e-16      0.190  -8.63e-16      1.000      -0.375       0.375
+PROFICIENCY[T.C1]     0.0803      0.193      0.417      0.677      -0.299       0.460
+PROFICIENCY[T.C2]    -0.1429      0.262     -0.544      0.587      -0.659       0.374
+==============================================================================
+Omnibus:                     1610.799   Durbin-Watson:                   1.914
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               38.820
+Skew:                          -0.266   Prob(JB):                     3.72e-09
+Kurtosis:                       1.224   Cond. No.                         16.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+#### LING_ATM ~ PROFICIENCY ####
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               LING_ATM   R-squared:                       0.003
+Model:                            OLS   Adj. R-squared:                 -0.012
+Method:                 Least Squares   F-statistic:                    0.1991
+Date:                Fri, 17 Nov 2023   Prob (F-statistic):              0.939
+Time:                        11:51:59   Log-Likelihood:                -150.58
+No. Observations:                 271   AIC:                             311.2
+Df Residuals:                     266   BIC:                             329.2
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             0.1429      0.161      0.888      0.375      -0.174       0.460
+PROFICIENCY[T.B1]     0.1143      0.176      0.648      0.517      -0.233       0.461
+PROFICIENCY[T.B2]     0.0752      0.165      0.455      0.649      -0.250       0.400
+PROFICIENCY[T.C1]     0.1043      0.167      0.624      0.533      -0.225       0.433
+PROFICIENCY[T.C2]     0.1429      0.228      0.628      0.531      -0.305       0.591
+==============================================================================
+Omnibus:                       50.460   Durbin-Watson:                   1.930
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               73.537
+Skew:                           1.261   Prob(JB):                     1.08e-16
+Kurtosis:                       2.605   Cond. No.                         16.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
