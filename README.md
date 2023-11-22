@@ -51,9 +51,9 @@ The remainder of this file describes the scripts used to manipulate original dat
 The script turns responses collected for questions (b) and (d) into three binary variables (namely, one concerning student understanding, one concerning learning and the third one concerning class atmosphere).
 It produces the files `data/clean_data.tsv` and `data/discarded_data.tsv` as output.
 Each line in the files pertains to a specific participant:
-    - participants that gave inconsistent answeres are filtered out
-    - missing replies are indicated with a `-` symbol and stored in the `discarded_data.tsv` file
-    - the `clean_data.tsv` file is the one containing all the participants that provided complete answers and is therefore the one we will be considering from this step onwards.
+  - participants that gave inconsistent answeres are filtered out
+  - missing replies are indicated with a `-` symbol and stored in the `discarded_data.tsv` file
+  - the `clean_data.tsv` file is the one containing all the participants that provided complete answers and is therefore the one we will be considering from this step onwards.
 
 
 ## Step2: `desc_statistics.py`
