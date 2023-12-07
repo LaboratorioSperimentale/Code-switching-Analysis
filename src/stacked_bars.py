@@ -19,7 +19,7 @@ with open("../data/clean_data.tsv") as fin:
             data_proficiency[prof][cat][yes_no] += 1
 
 # whether to have it in percentage or raw frequencies
-normalize = True
+normalize = False
 
 for category in categories:
 
@@ -43,8 +43,8 @@ for category in categories:
 
     plt.title(f'{lab._DICT[category]}')
 
-    plt.bar(labels, data_yes, fill=False, hatch='///', label="YES")
-    plt.bar(labels, data_no, fill=False, hatch='...', bottom=np.array(data_yes), label="No")
+    plt.bar(labels, data_yes, fill=False, hatch='///', label="Yes")
+    plt.bar(labels, data_no, fill=False, hatch='...', bottom=np.array(data_yes), label="No/Other")
 
     # plt.legend(loc="lower left", bbox_to_anchor=(0.8, 1.0))
     plt.legend()

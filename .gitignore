@@ -1,7 +1,6 @@
 .vscode/*
 .venv/*
 
-data/estrazione.tsv
 data/source_data.tsv
 
 plots/*

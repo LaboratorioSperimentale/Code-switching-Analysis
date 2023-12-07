@@ -1,5 +1,7 @@
 
-def clean_data(input_datapath, output_datapath, discarded_datapath):
+def clean_data(input_datapath,
+               output_datapath, output_datapath_missing,
+               discarded_datapath):
 
     # proficiency_levels = ["A1", "A2", "B1", "B2", "C1", "C2"]
     columns = ["PROFICIENCY",
@@ -7,9 +9,11 @@ def clean_data(input_datapath, output_datapath, discarded_datapath):
                "LING_HELP", "LING_UNDERSTAND", "LING_LEARN", "LING_ATM"]
 
     with open(output_datapath, "w", encoding="utf-8") as fout, \
+       open(output_datapath_missing, "w", encoding="utf-8") as fout_missing, \
        open(discarded_datapath, "w", encoding="utf-8") as fout_discarded:
 
         print("\t".join(columns), file=fout)
+        print("\t".join(columns), file=fout_missing)
         print("\t".join(columns), file=fout_discarded)
 
         with open(input_datapath, "r", encoding="utf-8") as fin:
@@ -139,6 +143,7 @@ def clean_data(input_datapath, output_datapath, discarded_datapath):
                     pass
 
 
+
                 toprint = [proficiency,
                            help_language, lang_learning_yes, lang_understanding_yes, lang_atmosphere_yes,
                            help_linguistics, ling_learning_yes, ling_understanding_yes, ling_atmosphere_yes]
@@ -148,15 +153,33 @@ def clean_data(input_datapath, output_datapath, discarded_datapath):
                     print("\t".join(toprint), file=fout_discarded)
                 else:
                     print("\t".join(toprint), file=fout)
+                    if lang_learning_yes == 0 and lang_learning_no == 0:
+                        lang_learning_yes = "-"
+                    if lang_understanding_yes == 0 and lang_understanding_no == 0:
+                        lang_understanding_yes = "-"
+                    if lang_atmosphere_yes == 0 and lang_atmosphere_no == 0:
+                        lang_atmosphere_yes = "-"
 
-                # print(f"{proficiency}\t{help_language}\t{lang_learning_yes}\t{lang_understanding_yes}\t{lang_atmosphere_yes}\t{help_linguistics}\t{ling_learning_yes}\t{ling_understanding_yes}\t{ling_atmosphere_yes}",
-                #       file=fout)
+                    if ling_learning_yes == 0 and ling_learning_no == 0:
+                        ling_learning_yes = "-"
+                    if ling_understanding_yes == 0 and ling_understanding_no == 0:
+                        ling_understanding_yes = "-"
+                    if ling_atmosphere_yes == 0 and ling_atmosphere_no == 0:
+                        ling_atmosphere_yes = "-"
+
+                    toprint = [proficiency,
+                               help_language, lang_learning_yes, lang_understanding_yes, lang_atmosphere_yes,
+                               help_linguistics, ling_learning_yes, ling_understanding_yes, ling_atmosphere_yes]
+                    toprint = [str(x) for x in toprint]
+                    print("\t".join(toprint), file=fout_missing)
+
 
 
 if __name__ == "__main__":
 
     _INPUT_DATAPATH = "../data/estrazione.tsv"
     _OUTPUT_DATAPATH = "../data/clean_data.tsv"
+    _OUTPUT_DATAPATH_2 = "../data/clean_data_with_missing.tsv"
     _DISCARDED_DATAPATH = "../data/discarded_data.tsv"
 
-    clean_data(_INPUT_DATAPATH, _OUTPUT_DATAPATH, _DISCARDED_DATAPATH)
+    clean_data(_INPUT_DATAPATH, _OUTPUT_DATAPATH, _OUTPUT_DATAPATH_2, _DISCARDED_DATAPATH)
