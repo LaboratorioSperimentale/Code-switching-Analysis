@@ -8,10 +8,12 @@
 
 # Intro
 
-This repository contains code developed for the project [INSERT PROJECT NAME].
-The study investigates [INSERT THEME] and was presented/submitted at []()
+This repository contains code developed for the project "Language proficiency and diversity in students' attitude towards code-switching".
+The study investigates he attitudes expressed by students of English as a Foreign Language towards their teachers' use of code-switching, also putting them in relation to the students' level of proficiency in English, with a focus on the context of the Italian university system (English-Italian code-switching).
 
-The project was developed by researchers [Antonella Luporini](https://www.unibo.it/sitoweb/antonella.luporini), ..., the statystical description and analysis was developed with the support of [Laboratorio Sperimentale](https://site.unibo.it/laboratorio-sperimentale/it).
+You can read more in the published paper here: [https://doi.org/10.4995/rlyla.2024.20805](https://doi.org/10.4995/rlyla.2024.20805)
+
+The project was developed by researchers [Antonella Luporini](https://www.unibo.it/sitoweb/antonella.luporini), Antonella Giacosa (University of Turin) and Cristiano Furiassi (University of Turin), the statystical description and analysis was developed with the support of [Laboratorio Sperimentale](https://site.unibo.it/laboratorio-sperimentale/it).
 
 # Code
 
@@ -44,7 +46,6 @@ For question (b) and (d), participants were asked to choose a subset of the foll
 
 
 The remainder of this file describes the scripts used to manipulate original data.
-[ESTRAZIONE is available?]
 
 ## Step1: `transform_data.py`
 
